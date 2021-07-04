@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Foodhub</title>
 
   <!-- Expand the number of characters we can use in the document beyond basic ASCII 🎉 -->
-<meta charset="utf-8">
+  <meta charset="utf-8">
 
-<!-- Connect Font Awesome CSS -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+  <!-- Connect Font Awesome CSS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
 
-<!-- Connect Bootstrap CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <!-- Connect Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
-<!-- Connect Bootstrap JavaScript and its dependencies -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+  <!-- Connect Bootstrap JavaScript and its dependencies -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
 
-<!-- Make it responsive to small screens -->
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Make it responsive to small screens -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<!-- Load Google Web Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Passion+One:wght@400&display=swap" rel="stylesheet">
+  <!-- Load Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Passion+One:wght@400&display=swap"
+    rel="stylesheet">
 
-<!-- load custom style sheet -->
-<link rel="stylesheet" href="/assets/my_custom_styles.css">
+  <!-- load custom style sheet -->
+  <link rel="stylesheet" href="/assets/my_custom_styles.css">
 
 </head>
 
@@ -34,7 +37,8 @@
     <a class="navbar-brand" href="https://www.google.com">
       <span class="h2 font-weight-bold">FOODHUB</span>
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -58,77 +62,98 @@
   <div class="container-fluid who-delivers py-6">
     <div class="row">
       <div class="col-md-6 offset-md-3 text-white">
-      <h2 class="font-weight-bold">
-        Who delivers in your neighborhood?
-      </h2>
+        <h2 class="font-weight-bold">
+          Who delivers in your neighborhood?
+        </h2>
 
-      <form>
-        <div class="form-group">
-          <label for="street_address">
-            Enter your address below.
-          </label>
+        <form>
+          <div class="form-group">
+            <label for="street_address">
+              Enter your address below.
+            </label>
 
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text">
-                <i class="fa fa-map-marker"></i>
-              </span>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fa fa-map-marker"></i>
+                </span>
+              </div>
+
+
+              <input class="form-control" id="street_address" type="text" placeholder="Street address, city, state">
+
+
+
             </div>
-            
-
-            <input class="form-control" id="street_address" type="text" placeholder="Street address, city, state">
-
-
-            
           </div>
-        </div>
 
-        <button class="btn btn-primary btn-block">
-          Find Food
-        </button>
-      </form>
+          <button class="btn btn-primary btn-block">
+            Find Food
+          </button>
+        </form>
 
       </div>
     </div>
   </div>
 
-    <h2>
-    How to Foodhub
-  </h2>
+  <div class="container-fluid py-6">
+    <div class="row text-center">
+      <div class="col-md-12">
+        <h2 class="font-weight-bold">
+          How to Foodhub
+        </h2>
 
-  <p>
-    Ordering from your favorite restaurant is even easier than eating.
-  </p>
+        <p>
+          Ordering from your favorite restaurant is even easier than eating.
+        </p>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-md-4">
 
-  <img src="/assets/images/map.jpg">
+        <img src="/assets/images/map.jpg" class="rounded-circle" width="200">
 
-  <h4>
-    The where
-  </h4>
+        <h4 class="font-weight-bold h6">
+          The where
+        </h4>
 
-  <p>
-    Browse menus from your favorite local restaurants.
-  </p>
+        <p>
+          Browse menus from your favorite local restaurants.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <img src="/assets/images/menu.jpg" class="rounded-circle" width="200">
 
-  <img src="/assets/images/menu.jpg">
+        <h4 class="font-weight-bold h6">
+          The what
+        </h4>
 
-  <h4>
-    The what
-  </h4>
+        <p>
+          Select what you want to eat. Submit your order.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <img src="/assets/images/delivery.jpg" class="rounded-circle" width="200">
 
-  <p>
-    Select what you want to eat. Submit your order.
-  </p>
+        <h4 class="font-weight-bold h6">
+          The delivery
+        </h4>
 
-  <img src="/assets/images/delivery.jpg">
+        <p>
+          Get the door and enjoy your food!
+        </p>
+      </div>
 
-  <h4>
-    The delivery
-  </h4>
+    </div>
 
-  <p>
-    Get the door and enjoy your food!
-  </p>
+  </div>
+
+
+
+
+
+
+
 
   <h2>
     Sound bites
@@ -137,7 +162,8 @@
   <img src="/assets/images/user-1.jpg">
 
   <p>
-    @Foodhub I love you, Foodhub! Just ordered me some grub, and I tell you, you folks make that part of my life easy. Thanks!
+    @Foodhub I love you, Foodhub! Just ordered me some grub, and I tell you, you folks make that part of my life easy.
+    Thanks!
   </p>
 
   <h4>
@@ -208,7 +234,12 @@
 
   <h2>About Foodhub</h2>
 
-  <p>Foodhub helps you find and order food from wherever you are. How it works: you type in an address, we tell you the restaurants that deliver to that locale as well as showing you droves of pickup restaurants near you. Want to be more specific? Search by cuisine, restaurant name or menu item. We'll filter your results accordingly. When you find what you're looking for, you can place your order online or by phone, free of charge. Oh, and we also give you access to reviews, coupons, special deals and a 24/7 customer care team that tracks each order and makes sure you get exactly what you want.</p>
+  <p>Foodhub helps you find and order food from wherever you are. How it works: you type in an address, we tell you the
+    restaurants that deliver to that locale as well as showing you droves of pickup restaurants near you. Want to be
+    more specific? Search by cuisine, restaurant name or menu item. We'll filter your results accordingly. When you find
+    what you're looking for, you can place your order online or by phone, free of charge. Oh, and we also give you
+    access to reviews, coupons, special deals and a 24/7 customer care team that tracks each order and makes sure you
+    get exactly what you want.</p>
 
   <h4>Sign up for special offers</h4>
 
@@ -261,4 +292,5 @@
     <li>For corporate accounts</li>
   </ul>
 </body>
+
 </html>
