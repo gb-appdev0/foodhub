@@ -9,11 +9,11 @@ body {
 }
 
 .who-delivers {
-  background: url("/assets/images/download-hero.jpg") no-repeat center center;
+  background: url("/assets/images/main-hero.jpg") no-repeat center center;
   background-size: cover;
 }
 
-.app-download {
+.download-apps {
   background: url("/assets/images/download-hero.jpg") no-repeat center center;
   background-size: cover;
 }
